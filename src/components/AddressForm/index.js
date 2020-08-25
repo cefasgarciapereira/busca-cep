@@ -37,7 +37,8 @@ export default function AddressForm(){
                 name='cep'
                 keyboardType='number-pad'
                 value={address.cep}
-                onChange={(text) => setAddress({...address, cep: text})}/>
+                onChange={(text) => setAddress({...address, cep: text})}
+                onBlurAction = {() => {_handleCEP()}}/>
             <Input
                 placeholder="Rua"
                 value={address.street}
@@ -54,9 +55,6 @@ export default function AddressForm(){
             <Button
             label="Limpar"
             action={() => setAddress({})}/>
-            <Button
-                label="Confirmar"
-                action={() => _handleCEP('123')}/>
         </View>
     )
 }

@@ -29,10 +29,15 @@ export default function Input(props){
                 placeholder={props.placeholder}
                 onChangeText={text => props.onChange(text)}
                 value={props.value}
-                placeholderTextColor="#666" 
+                placeholderTextColor="#888" 
                 style={styles.input}
                 onFocus={() => _handleInputStyle(green, '100%')}
-                onBlur={() => _handleInputStyle(blue, '60%')}
+                onBlur={() =>  {
+                    if (typeof(props.onBlurAction) !==  'undefined'){
+                        props.onBlurAction();
+                    }
+                    _handleInputStyle(blue, '60%');
+                }}
                 keyboardType={props.keyboardType ? props.keyboardType : 'default'}
                 />
         </View>
