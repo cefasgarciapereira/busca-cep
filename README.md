@@ -4,7 +4,7 @@
 </p>
 
 ## Preview
-<img align="center" src="demo.gif" width="360" height="640" />
+<img align="center" src="demo.gif" width="375" height="812" />
 
 ## Getting Started
 
