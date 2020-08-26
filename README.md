@@ -4,7 +4,7 @@
 </p>
 
 ## Preview
-![](demo.gif)
+<img src="demo.gif" width="360" height="640" />
 
 ## Getting Started
 
